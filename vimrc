@@ -21,6 +21,10 @@ map Q gq
 " text is lost and it only works for putting the current register.
 "vnoremap p "_dp
 
+let &t_Co=256
+let &t_Sf="\ESC[3%p1%dm"
+let &t_Sb="\ESC[4%p1%dm"
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -204,4 +208,6 @@ function! OpenURL()
   endif
 endfunction
 map <Leader>w :call OpenURL()<CR>
+
+colorscheme railscasts_256
 
