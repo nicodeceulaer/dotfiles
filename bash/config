@@ -38,6 +38,10 @@ bash_prompt_command() {
         NEW_PWD=${NEW_PWD:$pwdoffset:$pwdmaxlen}
         NEW_PWD=${trunc_symbol}/${NEW_PWD#*/}
     fi
+    
+#    # handle history acros multiple instances a bit more elegantly
+#    history -n  # reread history from disk
+#    history -a  # append recent commands to history file on disk
 }
 
 bash_prompt() {
@@ -94,3 +98,14 @@ PROMPT_COMMAND=bash_prompt_command
 bash_prompt
 unset bash_prompt
 
+# History ----------------------------------------------------------
+export HISTCONTROL=ignoredups:ignorespace
+shopt -s histappend
+export HISTSIZE=1000
+export HISTFILESIZE=3000
+export HISTIGNORE="ls:cd:[bf]g:exit:..:...:ll:lla"
+alias h=history
+
+hg(){
+   history | grep "$@"
+}
