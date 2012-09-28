@@ -1,0 +1,4 @@
+---
+BUNDLE_BUILD__SQLITE3-RUBY: --with-sqlite3-dir=/home/beq03881/opt/
+BUNDLE_BUILD__SQLITE3: --with-sqlite3-dir=/home/beq03881/opt/
+BUNDLE_BUILD__RUGGED: --with-git2-dir=/home/beq03881/opt
