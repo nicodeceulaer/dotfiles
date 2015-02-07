@@ -1,0 +1,62 @@
+# these are overrides
+
+# export TERM=putty-256color  # putty-256color disables CTRL-C in emacs ?
+export TERM=xterm-256color
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+  export PATH="$HOME/bin:$PATH"
+fi
+    
+if [ -d "$HOME/opt/bin" ]; then
+  export PATH="$HOME/opt/bin:$PATH"
+fi
+
+if [ -d /home/beq03881/opt/pgsql/bin ] ; then
+  export PATH=$PATH:/home/beq03881/opt/pgsql/bin
+fi
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+export PRLMDHOST=@bebsw4.brg.sv.philips.com
+export PATH=$PATH:/opt/upgtools
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/opt/bin
+export PATH=$PATH:/opt/mono/bin
+export PATH=$PATH:~/opt/pgsql/bin
+
+export http_proxy="http://beq00833:Only4BRG@nl141-cips2.piap.philips.net:8080/"
+export https_proxy="http://beq00833:Only4BRG@nl141-cips2.piap.philips.net:8080/"
+export ftp_proxy="http://beq00833:Only4BRG@nl141-cips2.piap.philips.net:8080/"
+export GIT_SSL_NO_VERIFY=true
+
+umask 0022 #ensure everybody in the group can read my files
+
+export INPUTRC=~/.inputrc
+
+# git completion
+source ~/tools/git/git/contrib/completion/git-completion.bash
+
+# Add completion to source and .
+complete -F _command source
+complete -F _command .
+
+# only use stty if we are on interactive shell, otherwise we get weird errors in SSH logins
+# rt_Commands
+if [ -t 0 ]; then
+  # dont react to ^s and ^q
+  stty stop  undef
+  stty start undef
+fi
+
+alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder

@@ -1,0 +1,15 @@
+#ensure CGDB refreshes if we reload the application
+set autosourcereload
+# match the tabstop of our coding guidelines
+set tabstop=4
+# selected line is highlighted
+set arrowstyle=highlight
+# color settings
+highlight Type cterm=bold ctermfg=darkblue
+highlight SelectedLineNr cterm=bold ctermfg=yellow ctermbg=darkblue
+highlight LineHighlight cterm=bold ctermfg=yellow ctermbg=darkblue
+highlight Arrow cterm=bold ctermfg=yellow ctermbg=darkblue
+highlight IncSearch cterm=bold ctermfg=yellow ctermbg=darkblue
+highlight Breakpoint cterm=bold ctermfg=white  ctermbg=darkred
+highlight DisabledBreakpoint cterm=bold ctermfg=white  ctermbg=lightred
+

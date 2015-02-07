@@ -1,0 +1,655 @@
+quit
+quit
+quit
+b main
+list main
+o
+list main
+dongle 
+dongle 23 1000
+b main
+c
+n
+dongle 23 1000
+detach
+quit
+y
+dongle 23 1000
+info break
+b main
+c
+y
+quit
+dongle 23 1000
+b main
+list main
+source gdb_settings 
+list main
+show substitute-path 
+list printf
+list main
+c
+list
+help set substitute-path
+help substitute-path
+help set
+set substitute-path 
+show source-path
+show
+show directories 
+directory /
+list main
+list printf
+bt
+list main
+show substitute-path 
+list main
+!SOURCE
+source gdb_settings 
+set substitute-path /localhome/user/B230R1_BLD/space /localhome/beq03881/plf_brcm/project/space/
+list main
+unset substitute-path 
+y
+set substitute-path /localhome/user/B230R1_BLD/space /localhome/beq03881/plf_brcm/project/space/
+list main
+list printf
+list main
+bt
+list main
+list cecGetDevPowerStatus 
+list main
+list cesgpi__lowdiv_iPresent 
+list main
+set substitute-path /localhome/user/B230R1_BLD/space /
+list main
+directory /home/beq03881/local/plf_brcm/project/space/
+list main
+list main
+directory /home/beq03881/local/plf_brcm/project/space
+list main
+directory /home/beq03881/local/plf_brcm/project/
+list main
+directory /home/beq03881/local/plf_brcm/project/space
+set substitute-path /localhome/user/B230R1_BLD/space space/
+directory /home/beq03881/local/plf_brcm/project/space
+list main
+directory /home/beq03881/local/plf_brcm/project/space/prod/am/cehtv/prod/amApp 
+list main
+version
+help
+quit
+y
+quit
+source gdb_settings 
+list main
+directory /
+list main
+list main
+directory /
+list main
+quit
+source gdb_settings 
+file philips/apps/amApp
+y
+list main
+quit
+:highlight Logo cterm=bold,underline ctermfg=Red ctermbg=Black
+t
+quit
+quit
+quit
+:q
+q
+dongle 23 1000
+p App
+bt
+quit
+y
+t
+quit
+dongle 23 1000
+help
+quit
+b main
+c
+dongle 23 1000
+c
+bt
+info threads
+info threads
+quit
+y
+dongle 23 1000
+b main
+c
+bt
+dongle
+dongle 23 1000
+b main
+c
+n
+thread apply all bt
+dongle 23 1000
+b main
+c
+n
+quit
+uy
+y
+dongle 23 1000
+b main
+c
+list
+quit
+y
+source gdb_settings
+b main
+souce floep
+source floep
+dongle 23 1000
+l main
+show substitute-path 
+version
+show version
+b main
+c
+quit
+y
+dongle 23 1000
+b main
+c
+n
+quit
+y
+list cesgpipmp.c
+b main
+c
+dongle 30 1000
+dongle 30 1000
+b main
+c
+c
+bt
+bt
+frame 3
+info locals 
+bt full
+quit
+y
+dongle 39 1000
+info threads
+bt
+quit
+y
+quit
+target remote 192.168.104.197:1006
+c
+bt
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+c
+bt
+frame 1
+set substitute-path /localhome/user/FUSION_MENTOR/ /home/beq03881/local/prod_fusion/
+frame 0
+frame 1
+list
+p dalea
+up
+down
+info locals
+frame up
+up
+down
+down
+set substitute-path Source/ /home/beq03881/local/prod_fusion/space/plf/directfb/DIRECTFB/DirectFB/Source/
+up
+down
+list
+path /home/beq03881/local/prod_fusion/space/plf/directfb/DIRECTFB/DirectFB/
+up
+down
+list
+path /home/beq03881/local/prod_fusion/space/plf/directfb/DIRECTFB/DirectFB/Source
+list
+list main
+up
+down
+up
+up
+down
+path /home/beq03881/local/prod_fusion/space/plf/directfb/DIRECTFB/DirectFB/Source/FusionDale/src
+list
+list main
+list
+up
+down
+path /home/beq03881/local/prod_fusion/space/plf/directfb/DIRECTFB/DirectFB/Source/FusionDale/src/
+list
+down
+up
+down
+show substitute-path 
+set substitute-path Source Source
+list
+up
+down
+list
+info locals
+p *messenger
+quit
+y
+target remote 192.168.104.197:1006
+c
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+b main
+c
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+c
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+c
+c
+bt
+target remote 192.168.104.197:1006
+y
+target remote 192.168.104.197:1006
+c
+c
+bt
+frame 1
+bt
+detach
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+c
+c
+quit
+target remote 192.168.105.135:1006
+quit
+target remote 192.168.105.135:1006
+target remote 192.168.105.135:1006
+target remote 192.168.105.135:1006
+target remote 192.168.105.135:1006
+target remote 192.168.105.146:1006
+c
+bt
+thread apply all bt 
+info threads
+thread apply all bt
+c
+thread apply all bt
+c
+detach
+target remote 192.168.105.146:1006
+target remote 192.168.105.146:1006
+c
+thread apply all bt
+thread 2
+frame 1
+info locals 
+p delay
+bt
+c
+c
+y
+y
+y
+y
+target remote 192.168.105.146:1006
+target remote 192.168.105.146:1006
+target remote 192.168.105.146:1006
+target remote 192.168.105.146:1006
+c
+info threads
+thread apply all bt
+quit
+target remote 192.168.105.146:1006
+b main
+c
+b LoadOls 
+c
+list
+n
+p url
+n
+p TrimmedPortalURL 
+p forced
+n
+s
+n
+n
+p url
+n
+p TurnedOn 
+p BrowserWinInitialised 
+p hbbtv_notification_listener
+b hbbtv_notification_listener
+p BrowserWinInitialised=1
+p BrowserWinInitialised
+n
+p operaWindow
+p operawindow 
+n
+n
+c
+info threads
+info b
+b 'OperaPedestrian::HbbWindow::CreateWindow'
+n
+n
+b 'OperaPedestrian::HbbWindow::CreateWindow(int, int, int, int, void*, OperaPedestrian::HbbScreen*, bool)' 
+n
+b "OperaPedestrian::HbbWindow::CreateWindow(int, int, int, int, void*, OperaPedestrian::HbbScreen*, bool)"
+n
+b "OperaPedestrian::HbbWindow::CreateWindow"
+n
+b windows.cpp:31
+n
+b window.cpp:31
+n
+bt
+info threads
+thread apply all bt
+thread 3
+detach
+target remote 192.168.105.146:1006
+info breakpoints 
+c
+b 'OperaPedestrian::HbbWindow::CreateWindow(int, int, int, int, void*, OperaPedestrian::HbbScreen*, bool)' 
+c
+c
+c
+bt
+c
+c
+c
+c
+c
+c
+bt
+frame 7
+p url
+bt
+down
+frame 8
+p url_id
+frame 7
+info locals
+p url_name.iBuffer 
+p *url_name.iBuffer 
+x x/ url_name.iBuffer 
+help x
+x /s url_name.iBuffer 
+x /32s url_name.iBuffer 
+c
+c
+c
+c
+c
+bt
+p *data
+c
+p *data
+n
+n
+c
+p *data
+c
+p *data
+c
+c
+c
+c
+info threads
+bt
+thread apply all bt
+c
+c
+target remote 192.158.105.146:1006
+y
+target remote 192.158.105.146:1006
+target remote 192.158.105.146:1006
+target remote 192.158.105.146:1006
+target remote 192.158.105.146:1006
+target remote 192.158.105.146:1006
+target remote 192.168.105.146:1006
+info breakpoints 
+c
+c
+c
+p *data
+c
+c
+bt
+frame 4
+info locals
+p data
+p *data
+bt
+frame 0
+n
+p data->loading_failed.handled=0
+p data->loading_failed.handled
+s
+b 502
+c
+n
+bt
+c
+s
+c
+b 576
+c
+n
+s
+n
+s
+c
+n
+target remote 192.168.105.146:1006
+target remote 192.168.105.146:1006
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+q
+y
+q
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+c
+bt
+detach
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+c
+quit
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.105.238:1006
+target remote 192.168.104.197:1006
+info breakpoints 
+b main
+c
+b opera_handle_notification
+n
+sharedlibrary 
+info sharedlibrary 
+quit
+y
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+b main
+c
+b op_open_url
+b 'OperaPedestrian::opera_handle_notification'
+b 'OperaPedestrian::opera_handle_notification(GOGI_Opera*, GOGI_OperaWindow*, GOGI_OPERA_EVENT, GogiOperaEventData*)' 
+b 'OperaPedestrian::opera_handle_notification(GOGI_Opera*, GOGI_OperaWindow*, GOGI_OPERA_EVENT, GogiOperaEventData*)' 
+detach
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+info breakpoints 
+c
+info breakpoints 
+c
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+c
+b dfb_get_window_for_new_screen
+b dfb_core_deinit_check
+c
+bt
+c
+bt
+c
+bt
+frame 3
+p e
+c
+c
+bt
+p *data
+c
+bt
+frame 4
+frame 3
+b 'URLFilter::CheckURLKernel(uni_char const*, BOOL&, Window*)' 
+c
+bt
+c
+n
+p load
+p m_include_rules 
+p load
+p m_include_rules 
+p m_include_rules.m_list
+p m_include_rules.m_list.Get
+m_include_rules.m_list.Get
+bt
+p m_include_rules
+m_include_rules.m_list.Get
+p m_include_rules.m_list.Get()
+p m_include_rules.m_list.Get(0)
+p *m_include_rules.m_list.Get(0)
+p *m_include_rules.m_list.Get(0).m_url
+p m_include_rules.m_list.Get(0)->m_url
+p m_include_rules.m_list.Get(0)->m_url.CStr()
+p m_include_rules.m_list.Get(0)->m_url
+p m_include_rules
+bt
+info threads
+target remote 192.168.104.197:1006
+info threads
+bt
+info break
+c
+bt
+target remote 192.168.104.197:1006
+y
+y
+target remote 192.168.104.197:1006
+c
+detach
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+info breakpoints 
+delete 0 1 2 3 4 5 6 
+info breakpoints 
+c
+bt
+p $ra
+b *$ra
+info breakpoints 
+info threads
+bt
+info registers
+x 
+help x
+x /a100 $sp
+x/a100 $sp
+x/a100 7021aa38
+x/a100 0x7021aa38
+x/100a 0x7021aa38
+x/100a $sp
+info registers
+x/100a $s8
+x/100a $s8 - 100
+info registers
+x/100a $ra
+info threads
+target remote 192.168.104.197:1006
+y
+y
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+info break
+delete 7
+b main
+c
+b ceolsopera_mbrowser.c:3228
+c
+bt
+c
+info threads
+c
+c
+c
+c
+c
+c
+c
+c
+quit
+y
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+b main
+c
+b  keep n   0x00000000
+n
+b ceolsopera_mbrowser.c:3228
+c
+quit
+target remote 192.168.104.197:1006
+target remote 192.168.104.197:1006
+c
+quit
+target remote 192.168.104.197:1006
+c
+quit
+y
