@@ -1,4 +1,6 @@
-. ~/.zsh/aliases
+if [[ -f ~/.zsh/aliases ]]; then
+  . ~/.zsh/aliases
+fi
 
 # alternative to "rails" command to use templates
 function railsapp {
