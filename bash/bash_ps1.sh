@@ -1,4 +1,3 @@
-echo "dinges"
 # Fill with minuses
 # (this is recalculated every time the prompt is shown in function prompt_command):
 fill="--- "
