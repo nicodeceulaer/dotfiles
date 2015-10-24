@@ -41,6 +41,6 @@ Extract () {
      fi
 }
 
-alias l='ls -lAh --color'
-alias ll='ls -lAh --color'
+alias l='ls -lAhG'
+alias ll='ls -lAhG'
 
