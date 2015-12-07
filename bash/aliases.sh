@@ -1,4 +1,6 @@
-. ~/.zsh/aliases
+if [[ -f ~/.zsh/aliases ]]; then
+  . ~/.zsh/aliases
+fi
 
 # alternative to "rails" command to use templates
 function railsapp {
@@ -40,4 +42,8 @@ Extract () {
 }
 
 alias l='ls -lAh --color'
+alias ll='ls -lAh --color'
+alias hgrep='history | grep '
+# alias l='ls -lAhG'
+# alias ll='ls -lAhG'
 
