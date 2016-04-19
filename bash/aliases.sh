@@ -17,6 +17,9 @@ alias reload='. ~/.bash_profile'
 alias htop='TERM=screen htop'
 
 # tmux attach
+# tmux has problems finding back the socket, so lets give it a proper name before
+export TMUX_TMPDIR=${HOME}/tmp/tmux
+mkdir -p $TMUX_TMPDIR
 alias tma='tmux attach || tmux'
 
 # extract any zip
