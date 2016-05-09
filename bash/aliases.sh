@@ -46,6 +46,7 @@ Extract () {
 
 alias l='ls -lAh --color'
 alias ll='ls -lAh --color'
+alias lt='ls -lAh -lt --color'
 alias hgrep='history | grep '
 # alias l='ls -lAhG'
 # alias ll='ls -lAhG'
