@@ -5,7 +5,7 @@ export EDITOR='subl_wait'
 export PGDATA=/usr/local/var/postgres
 
 # some settings to be more colorful
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+## not suported anymore :-( export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export CLICOLOR=true
 export LSCOLORS=ExGxFxdxCxDxDxBxBxExEx
 

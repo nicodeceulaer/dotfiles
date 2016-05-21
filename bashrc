@@ -6,7 +6,7 @@ source ~/.bash/bash_ps1.sh
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
         # ...
-        echo "linux specific setup here"
+        echo "linux"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
