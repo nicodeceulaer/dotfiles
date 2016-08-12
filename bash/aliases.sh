@@ -44,10 +44,12 @@ Extract () {
      fi
 }
 
-alias l='ls -lAh --color'
-alias ll='ls -lAh --color'
-alias lt='ls -lAh -lt --color'
-alias hgrep='history | grep '
-# alias l='ls -lAhG'
-# alias ll='ls -lAhG'
+#for *BSD/darwin/OSX
+export CLICOLOR=1
+LS_COLOR_OPTION="-G"
+ls --color=auto &> /dev/null && LS_COLOR_OPTION="--color"
 
+alias l='ls -lAh ${LS_COLOR_OPTION}'
+alias ll='ls -lAh ${LS_COLOR_OPTION}'
+alias lt='ls -lAh -lt ${LS_COLOR_OPTION}'
+alias hgrep='history | grep '

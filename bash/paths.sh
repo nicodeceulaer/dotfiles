@@ -19,3 +19,4 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.node/bin:$PATH"
+export PATH="$HOME/.npm-packages/bin:$PATH"
