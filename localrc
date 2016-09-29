@@ -17,7 +17,7 @@ if [ -d /home/beq03881/opt/pgsql/bin ] ; then
 fi
 
 # make less more friendly for non-text input files, see lesspipe(1)
-# [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -35,15 +35,9 @@ export PATH=$PATH:~/opt/bin
 export PATH=$PATH:/opt/mono/bin
 export PATH=$PATH:~/opt/pgsql/bin
 
-# export http_proxy="http://172.26.92.2:8080/"
-# export https_proxy=$http_proxy
-# export ftp_proxy=$http_proxy
 export GIT_SSL_NO_VERIFY=true
-
 umask 0022 #ensure everybody in the group can read my files
-
 export INPUTRC=~/.inputrc
-
 
 # Add completion to source and .
 complete -F _command source

@@ -6,7 +6,7 @@ source ~/.bash/bash_ps1.sh
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
         # ...
-        echo "linux"
+	export DINGES=1
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
@@ -16,16 +16,16 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     export PATH="/usr/local/heroku/bin:$PATH"
 elif [[ "$OSTYPE" == "cygwin" ]]; then
     # POSIX compatibility layer and Linux environment emulation for Windows
-    echo "cygwin"
+	export DINGES=1
 elif [[ "$OSTYPE" == "msys" ]]; then
     # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
-    echo "msys"
+	export DINGES=1
 elif [[ "$OSTYPE" == "win32" ]]; then
     # I'm not sure this can happen.
-    echo "win32"
+	export DINGES=1
 elif [[ "$OSTYPE" == "freebsd"* ]]; then
     # ...
-    echo "freebsd"
+	export DINGES=1
 else
     # Unknown.
     echo "unknown OSTYPE : $OSTYPE"
