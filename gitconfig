@@ -1,0 +1,42 @@
+[user]
+	name = nico de ceulaer
+	email = nico.deceulaer@tpvision.com
+[alias]
+	co    = checkout
+  ci    = commit -a
+  co    = checkout
+  st    = status -a
+  stat  = status -a
+  br    = branch
+  wdiff = diff --color-words
+  tree  = log --branches --remotes --tags --graph --oneline --decorate
+  tree2 = log --branches --remotes --tags --graph --oneline --decorate --all
+  tree3 = log --branches --remotes --tags --graph --oneline --decorate --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  tree4 = log --oneline --decorate --all --graph 
+  ll    = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[color]
+  ui = true
+	diff = auto
+	status = auto
+	branch = auto
+[color "diff"]
+  whitespace = red reverse
+[core]
+	excludesfile = /home/beq03881/.gitignore
+	editor = vi
+	autocrlf = input
+[apply]
+	whitespace = nowarn
+[format]
+	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+# [github]
+#	user = nicodeceulaer
+#	token = 57d15e5612b8346127ca84e785522a01
+[review "http://beqbrgbrg1lxcon.code1.emi.philips.com:8888/"]
+	username = nico.deceulaer@tpvision.com
+[help]
+	autocorrect = 1
+[credential]
+	helper = cache --timeout=3600
+[push]
+	default = matching
