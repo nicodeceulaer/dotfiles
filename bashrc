@@ -9,12 +9,9 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
     export DINGES=1
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
-    eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
-    export PERL_MB_OPT="--install_base \"/Users/nicodeceulaer/perl5\""
-    export PERL_MM_OPT="INSTALL_BASE=/Users/nicodeceulaer/perl5"
-
-    ### Added by the Heroku Toolbelt
-    export PATH="/usr/local/heroku/bin:$PATH"
+    ### eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
+    ### export PERL_MB_OPT="--install_base \"/Users/nicodeceulaer/perl5\""
+    ### export PERL_MM_OPT="INSTALL_BASE=/Users/nicodeceulaer/perl5"
 
     ### handle readlink -f not working according posix on OsX
     export PATH="/usr/local/homebrew/opt/coreutils/libexec/gnubin:$PATH"
