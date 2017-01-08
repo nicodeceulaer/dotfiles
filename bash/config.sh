@@ -1,7 +1,7 @@
 export PS1="\w$ "
 
 PATH=$PATH:~/bin
-export EDITOR='subl_wait'
+export EDITOR="subl_wait"
 export PGDATA=/usr/local/var/postgres
 
 # some settings to be more colorful

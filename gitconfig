@@ -52,3 +52,9 @@
     excludesfile = /Users/nicodeceulaer/.gitignore_global
     editor = subl -n -w
 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/Homebrew/Caskroom/sourcetree/2.0.5.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
