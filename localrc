@@ -12,10 +12,6 @@ if [ -d "$HOME/opt/bin" ]; then
   export PATH="$HOME/opt/bin:$PATH"
 fi
 
-if [ -d /home/beq03881/opt/pgsql/bin ] ; then
-  export PATH=$PATH:/home/beq03881/opt/pgsql/bin
-fi
-
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -28,12 +24,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export PRLMDHOST=@bebsw4.brg.sv.philips.com
-export PATH=$PATH:/opt/upgtools
 export PATH=$PATH:~/bin
 export PATH=$PATH:~/opt/bin
 export PATH=$PATH:/opt/mono/bin
-export PATH=$PATH:~/opt/pgsql/bin
 
 export GIT_SSL_NO_VERIFY=true
 umask 0022 #ensure everybody in the group can read my files
@@ -52,7 +45,3 @@ if [ -t 0 ]; then
 fi
 
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
-
-export USE_CCACHE=1
-export USE_CCACHE_DIR=/home/beq03881/local/ccache
-

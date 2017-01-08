@@ -40,7 +40,10 @@ function other_prompt_command {
         ;;
     esac
 }
-PROMPT_COMMAND=other_prompt_command
+# remove PROMPT_COMMAND definition below;
+# otherwise the interaction with ohmygit causes double print
+# of the prompt definition to the screen
+# PROMPT_COMMAND=other_prompt_command
 
 if [ -f ~/.oh-my-git/prompt.sh ]; then
   source ~/.oh-my-git/prompt.sh
@@ -48,7 +51,7 @@ if [ -f ~/.oh-my-git/prompt.sh ]; then
   omg_second_line=''
   kill -s WINCH $$ # ensure we have COLUMNS/ROWS working - fakes a resize event
   function omg_prompt_callback() {
-    echo "$(other_prompt_command)"
-  }
+   echo "$(other_prompt_command)"
+ }
 fi
 
