@@ -12,11 +12,9 @@ fi
 #  # 32-bit stuff here
 #fi
 
-export LD_LIBRARY_PATH=/home/beq03881/opt/lib:$LD_LIBRARY_PATH
-export LD_RUN_ATPH=/home/beq03881/opt/lib:$LD_RUN_PATH
-
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.node/bin:$PATH"
 export PATH="$HOME/.npm-packages/bin:$PATH"
+export PATH=$PATH:"/usr/local/homebrew/bin/"
