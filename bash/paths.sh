@@ -1,6 +1,3 @@
-export PATH="~/bin:~/.bin:/usr/local/homebrew/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:$PATH"
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-
 if [ -d "$HOME/opt/local/bin" ]; then
   export PATH="$HOME/opt/local/bin:$PATH"
 fi
@@ -17,4 +14,4 @@ export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.node/bin:$PATH"
 export PATH="$HOME/.npm-packages/bin:$PATH"
-export PATH=$PATH:"/usr/local/homebrew/bin/"
+export PATH="/usr/local/sbin:$PATH"
